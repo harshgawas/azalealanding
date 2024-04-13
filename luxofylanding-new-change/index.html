@@ -2,9 +2,14 @@
 
 <html lang="en-US">
   <head>
+
+    
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Cubiktech" />
+
+
+
     <!-- Preconnect to CDN for image assets -->
     <link rel="preconnect" href="https://res.cloudinary.com" crossorigin>
     <!-- Other preconnects if necessary -->
@@ -14,7 +19,7 @@
     <link rel="shortcut icon" href="https://res.cloudinary.com/hacknitr/image/upload/v1709134345/Luxofy/n1n76fsxeczyvctml8do.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/owl.carousel.css" type="text/css" />
-   <link rel="stylesheet" href="assets/css/style.min.css" type="text/css" />
+   <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
 
    <style>
       /* For WebKit browsers like Chrome and Safari */
@@ -85,19 +90,20 @@
             <div class="wrapper">
               <div class="left">
                 <a href="index.html" class="brand"
-                  ><img src="assets/images/Luxofy.png" class="luxofy" alt=""
+                  ><img src="assets/images/Luxofy.png" class="luxofy" alt="Luxofy - Back to Home"
+                  loading="lazy"
                 /></a>
               </div>
               <!--end left-->
               <div class="right">
                 <ul class="nav navigation-links animate">
-                  <!-- <li><a href="#page-top" class="scroll">Home</a></li> -->
-                  <li><a href="#gallery" class="scroll">Gallery</a></li>
-                  <li><a href="#about" class="scroll">About</a></li>
-                  <li><a href="#details" class="scroll">Details</a></li>
-                  <li><a href="#faq-section" class="scroll">FAQ</a></li>
-                  <li><a href="#contact" class="scroll">Contact</a></li>
-                </ul>
+                  <li><a href="#gallery" class="scroll" aria-label="Scroll to Gallery Section">Gallery</a></li>
+                  <li><a href="#about" class="scroll" aria-label="Scroll to About Section">About</a></li>
+                  <li><a href="#details" class="scroll" aria-label="Scroll to Details Section">Details</a></li>
+                  <li><a href="#faq-section" class="scroll" aria-label="Scroll to FAQ Section">FAQ</a></li>
+                  <li><a href="#contact" class="scroll" aria-label="Scroll to Contact Section">Contact</a></li>
+              </ul>
+              
                 <div class="nav-btn">
                   <figure></figure>
                   <figure></figure>
@@ -127,15 +133,10 @@
                   </p>
                 </div>
                 <div class="animate">
-                  <a href="#about" class="btn btn-rounded btn-default scroll"
-                    >Check out more</a
-                  >
-                  <a
-                    href="#contact"
-                    class="btn btn-rounded btn-default btn-framed scroll"
-                    >Contact us</a
-                  >
-                </div>
+                  <a href="#about" class="btn btn-rounded btn-default scroll" aria-label="Learn more about us by visiting the About section">Check out more</a>
+                  <a href="#contact" class="btn btn-rounded btn-default btn-framed scroll" aria-label="Get in touch with us via the Contact section">Contact us</a>
+              </div>
+              
               </div>
               <!--end container-->
             </div>
@@ -153,12 +154,12 @@
            
             <div class="hero-slide">
               <div class="bg-transfer">
-                <img src="./assets/images/c1.webp" alt="" />
+                <img src="./assets/images/c1.webp" alt="" loading="lazy"/>
               </div>
             </div>
             <div class="hero-slide">
               <div class="bg-transfer">
-                <img src="./assets/images/Pw2.webp" alt="" />
+                <img src="./assets/images/Pw2.webp" alt="" loading="lazy"/>
               </div>
             </div>
           </div>
@@ -892,7 +893,8 @@
                         <br />
                         <br />
                         +91 7969033999<br />
-                        <a href="#">sales@luxofy.in</a>
+                        <a href="mailto:sales@luxofy.in" aria-label="Email sales at Luxofy">sales@luxofy.in</a>
+
                       </address>
                     </div>
                     <div class="col-md-6 col-sm-6">
@@ -1037,7 +1039,8 @@
             <div class="col-md-8 col-sm-8">
               <div class="contact-data text-align-right">
                 <figure>+91 7969033999</figure>
-                <a href="#">sales@luxofy.in</a>
+                <a href="mailto:sales@luxofy.in" aria-label="Email sales at Luxofy">sales@luxofy.in</a>
+
               </div>
             </div>
             <!--end col-md-8-->
@@ -1049,11 +1052,11 @@
           
         </div>
         <!--end container-->
-        <div class="background-wrapper">
+        <!-- <div class="background-wrapper">
           <div class="bg-transfer opacity-20">
             <img src="assets/img/footer-bg.jpg" alt="" />
           </div>
-        </div>
+        </div> -->
         <!--end background-wrapper-->
       </footer>
       <!--end page-footer-->
@@ -1061,20 +1064,20 @@
     <!--end page-wrapper-->
 
     <!--end outer-wrapper-->
-    <script type="text/javascript" src="assets/js/jquery-2.2.1.min.js"></script>
+    <!-- <script type="text/javascript" src="assets/js/jquery-2.2.1.min.js"></script>
     <script
       type="text/javascript"
       src="assets/js/jquery-migrate-1.2.1.min.js"
-    ></script>
+    ></script> -->
     
     <!-- <script
       type="text/javascript"
       src="assets/bootstrap/js/bootstrap.min.js"
     ></script> -->
-    <script
+    <!-- <script
       type="text/javascript"
       src="assets/js/jquery.validate.min.js"
-    ></script>
+    ></script> -->
     <script type="text/javascript" src="assets/js/owl.carousel.min.js"></script>
    
     <script type="text/javascript" src="assets/js/scrollReveal.min.js"></script>
@@ -1095,6 +1098,8 @@
         $(".page-wrapper").toggleClass("show-navigation");
       });
   
+
+      
       // Function to handle window scroll event
       $window.scroll(function () {
         if ($window.scrollTop() > 1) {
@@ -1231,18 +1236,7 @@
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-T5DNBL5M');</script>
 
-<!-- Initialize Bootstrap functionality -->
-<script>
-  // Initialize tooltip component
-  $(function () {
-    $('[data-toggle="tooltip"]').tooltip()
-  })
-  
-  // Initialize popover component
-  $(function () {
-    $('[data-toggle="popover"]').popover()
-  })
-  </script> 
+
 
   </body>
 </html>
